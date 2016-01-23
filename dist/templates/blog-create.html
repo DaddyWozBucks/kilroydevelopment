@@ -1,0 +1,59 @@
+
+<div class="container">
+  <div id="input">
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input type="text" id="title" ng-model="newPost.title" placeholder="Enter post title..." class="form-control"/>
+    </div>
+    <div class="form-group">
+      <label for="quote">Quote</label>
+      <input type="text" id="quote" ng-model="newPost.quote" placeholder="Enter post quote..." class="form-control"/>
+    </div>
+    <div class="form-group">
+      <label for="body">Body</label>
+      <textarea type="text" id="body" rows="6" ng-model="newPost.body" placeholder="Enter post..." class="form-control"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="main_img">Main Image</label>
+      <input type="text" id="main_img" ng-model="newPost.main_img" placeholder="Enter image url..." class="form-control"/>
+    </div>
+    <div class="form-group">
+      <label for="npassword">Password</label>
+      <input type="password" id="npassword" ng-model="newPost.password" placeholder="Enter password..." class="form-control"/>
+    </div>
+  </div>
+  <div class="panel panel-default"> 
+    <div class="form-group">
+      <label for="url">URL</label>
+      <input type="text" id="url" ng-model="newFav.url" placeholder="Enter post title..." class="form-control"/>
+    </div>
+    <div class="form-group">
+      <label for="citation">Citation Link</label>
+      <input type="text" id="citation" ng-model="newFav.citation" placeholder="Enter post quote..." class="form-control"/>
+    </div>
+    <div class="form-group">
+      <label for="fpassword">Password</label>
+      <input type="password" id="fpassword" ng-model="newFav.password" placeholder="Enter password..." class="form-control"/>
+    </div>
+  </div>
+</div>
+<div class="panel-panel-default">
+  <button ng-click="signUp()" class="btn-default">Admin Me!</button>
+  <button ng-click="postPost()" class="btn-default">Post!</button>
+  <button ng-click="updatePost()" class="btn-default">Update Post!</button>
+  <button ng-click="postFav()" class="btn-default">Post Fave!</button>
+</div>
+<div class="col-xs-12 col-md-8 container">
+  <div ng-style="{'border': '2px black solid'}" class="post container-fluid">
+    <image src="{{post.main_img}}" class="img-responsive"></image>
+    <div class="post_title">
+      <h1 class="text-center">{{post.title}}</h1>
+    </div>
+    <div class="post_body">
+      <blockquote>
+        <p>{{post.quote}}</p>
+      </blockquote>
+      <p class="text-center">{{post.body}}</p>
+    </div>
+  </div>
+</div>

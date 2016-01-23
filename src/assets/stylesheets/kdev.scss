@@ -1,0 +1,43 @@
+#skills {
+  border: 3px solid #3FBF7F;
+  border-radius: 5px;
+  font-family: 'Raleway';
+  padding: 1%;
+  margin: 2%;
+}
+#projects{
+  border: 3px solid #BF3F85;
+  border-radius: 5px;
+  font-family: 'Raleway';
+  padding: 1%;
+  margin: 2%;
+}
+.title{
+  font-family: 'Lobster';
+  text-decoration: underline;
+}
+#text {
+  padding: 3% 4%;
+  font-size: 1.5rem;
+}
+.project {
+  border: 1px solid #2D85F0;
+  margin: 1%;
+  padding: 1%;
+  border-radius: 5px;
+  background-color: transparentize(#2D85F0, .9);
+}
+.page_card {
+  width: auto;
+  height: 2.5rem;
+  border: 2px solid #95F329;
+  float: left;
+  padding: 5px;
+  margin: 2%;
+}
+.project_main {
+
+}
+.project_text {
+
+}

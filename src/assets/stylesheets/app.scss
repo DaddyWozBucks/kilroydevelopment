@@ -1,0 +1,45 @@
+@font-face {
+
+@import url(https://fonts.googleapis.com/css?family=Raleway|Lobster);
+}
+body { padding-top: 70px; }
+.landing_title {
+  font-family: 'Lobster';
+  padding: auto 5%;
+}
+.my_nav{
+  border-bottom: 1px solid black;
+  color: black;
+  background-color: #FFF;
+}
+.my_nav__item {
+  font-family: 'Lobster';
+  color: black;
+}
+.landing_title__subitem {
+  margin: 2%;
+}
+#enter {
+  font-family: 'Raleway';
+  text-decoration: underline;
+}
+#title{
+  font-size: 8rem;
+}
+#k{
+  font-family: 'Lobster';
+  font-size: 12rem;
+  margin: 2rem;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+.title_img{
+  margin: 0 auto;
+}
+.icon-bar {
+  border: 1px solid black;
+}
+.fl {
+  float: left;
+  width: 20%;
+}

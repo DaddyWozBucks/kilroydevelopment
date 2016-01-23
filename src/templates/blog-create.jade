@@ -1,0 +1,51 @@
+div.container
+  div#input
+    div.form-group
+      label(for="title") Title
+      input.form-control(type="text" id="title" ng-model="newPost.title" placeholder="Enter post title...")
+    div.form-group
+      label(for="quote") Quote
+      input.form-control(type="text" id="quote" ng-model="newPost.quote" placeholder="Enter post quote...")  
+    div.form-group
+      label(for="body") Body
+      textarea.form-control(type="text" id="body" rows="6" ng-model="newPost.body" placeholder="Enter post...")
+    div.form-group
+      label(for="main_img") Main Image
+      input.form-control(type="text" id="main_img" ng-model="newPost.main_img" placeholder="Enter image url...") 
+    div.form-group
+      label(for="npassword") Password
+      input.form-control(type="password" id="npassword" ng-model="newPost.password" placeholder="Enter password...") 
+  div.panel.panel-default  
+    div.form-group
+      label(for="url") URL
+      input.form-control(type="text" id="url" ng-model="newFav.url" placeholder="Enter post title...")
+    div.form-group
+      label(for="citation") Citation Link
+      input.form-control(type="text" id="citation" ng-model="newFav.citation" placeholder="Enter post quote...")  
+    div.form-group
+      label(for="fpassword") Password
+      input.form-control(type="password" id="fpassword" ng-model="newFav.password" placeholder="Enter password...") 
+    
+//- div.col-xs-12.col-md-8.container  
+//-   div.form-group Sign Up User 
+//-     label(for="title") Email
+//-     input.form-control(type="text" id="email" ng-model="newUser.email" placeholder="Enter email...")
+//-   div.form-group
+//-     label(for="quote") Password
+//-     input.form-control(type="password" id="password" ng-model="newUser.password" placeholder="Enter password...") 
+
+div.panel-panel-default
+  button.btn-default(ng-click="signUp()") Admin Me!
+  button.btn-default(ng-click="postPost()") Post!
+  button.btn-default(ng-click="updatePost()") Update Post!
+  button.btn-default(ng-click="postFav()") Post Fave!
+
+div.col-xs-12.col-md-8.container
+  div.post.container-fluid(ng-style="{'border': '2px black solid'}")
+    image.img-responsive(src="{{post.main_img}}")
+    div.post_title
+      h1.text-center {{post.title}}
+    div.post_body
+      blockquote
+        p {{post.quote}}
+      p.text-center {{post.body}}

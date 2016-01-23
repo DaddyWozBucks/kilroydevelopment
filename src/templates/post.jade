@@ -1,0 +1,19 @@
+div.landing_title.container
+  image.img-responsive.title_img(src="/assets/images/kilroy.jpg")
+  p.text-center.lead Follow along as I navigate the treacherous waters of freelance coding and being in my twenties in Barcelona.
+div.container
+  div.post.container-fluid(ng-style="{'border': '2px {{postcolor}} solid'}")
+    div.feed
+      div.feed_box.text-center.
+        Posted on {{post.created_at | date}}
+      div.feed_box.text-center
+        span.glyphicon.glyphicon-heart(ng-click="likePost(post.id)")
+        h4 Likes: {{post.likes}}
+        
+    image.post_img.img-responsive(src="{{post.main_img}}")
+    div.post_title
+      h1.title.text-center {{post.title}}
+    div.post_body
+        p.post_quote.
+         {{post.body}}
+    

@@ -1,0 +1,14 @@
+div.landing_title.container
+  image.img-responsive.title_img(src="/assets/images/kdev.jpg")
+  h1.text-center.lead {{project.title}}
+div.container
+  div.col-md-3.col-xs-hidden.container
+    div.page_card.title(ng-repeat="page in project.pages", ng-click="changePV(page.id)") {{page.title}}
+    
+  div.col-md-9.col-xs-12.container
+    div.project_main
+      .image
+        image.img-responsive(src="{{projectView}}")
+      div.project_text
+        h1.text-center {{ project.title }}
+        p {{ project.text}}

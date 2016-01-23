@@ -1,0 +1,31 @@
+nav.navbar.navbar-fixed-top.my_nav(role="navigation")
+  div.container-fluid
+    
+    div.navbar-header
+      button(type="button" class="navbar-toggle" data-toggle="collapse" data-target="#ddj_navbar")
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+
+      a.my_nav__item(class="navbar-brand" href="#") Kilroy Development
+
+
+  
+    div(class="collapse navbar-collapse" id="ddj_navbar")
+      ul(class="nav navbar-nav").col-xs
+        li
+          a.my_nav__item(data-toggle="collapse", data-target="#ddj_navbar", ui-sref="app.kilroy") Kilroy Development
+        li
+          a.my_nav__item(data-toggle="collapse", data-target="#ddj_navbar", ui-sref="app.blog") Blog
+        li
+          a.my_nav__item(data-toggle="collapse", data-target="#ddj_navbar", ui-sref="app.contact") Contact
+
+        
+          
+div.mainui(ui-view="main")  
+div.block
+div.nav.navbar-fixed-bottom.footer_ui
+  span.text-left
+    a(h-ref="http://www.kilroydevelopment.com") 
+      h5.my_nav__item Kilroy Development 2016
