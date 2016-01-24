@@ -7,13 +7,14 @@ div.container
       div.feed_box.text-center.
         Posted on {{post.created_at | date}}
       div.feed_box.text-center
+        span {{post.likes}}
         span.glyphicon.glyphicon-heart(ng-click="likePost(post.id)")
-        h4 Likes: {{post.likes}}
+      
         
     image.post_img.img-responsive(src="{{post.main_img}}")
     div.post_title
       h1.title.text-center {{post.title}}
     div.post_body
-        p.post_quote.
-         {{post.body}}
+      p.post_quote.
+        {{post.body}}
     

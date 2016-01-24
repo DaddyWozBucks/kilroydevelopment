@@ -9,6 +9,10 @@ div.container-fluid
       p.text-center {{introText.land_1}} 
       p.text-center {{introText.land_2}}
       p.text-center {{introText.land_3}} 
+    div#need
+      h4.text-left.title I need a...
+      div.container
+        a.need_card(ng-repeat="need in needsArray", ng-href="mailto:kilroydevelopmentbcn@gmail.com?subject={{need.mailto}}") {{need.text}}
   div.col-xs-12.col-sm-4.col-md-offset-1 
     div#skills
       h4.text-center.title Skills
@@ -16,8 +20,9 @@ div.container-fluid
         h5.text-left {{skill.name}}
         div.progress
           div.progress-bar.progress-bar-striped.active(role="progressbar" aria-valuenow="{{skill.value}}" aria-valuemin="0" aria-valuemax="100" style="width: {{skill.value + '%'}}")
-div.container#projects
-  a.col-xs-3.project(ng-repeat="project in projectArray", ng-href="#/app/projects/{{project.id}}") 
+div.container-fluid#projects
+  h2.title.text-center Projects: Personal & Professional
+  a.col-md-3.col-xs-12.project(ng-repeat="project in projectArray", ng-href="#/app/projects/{{project.id}}") 
     div
       image.img-responsive(src="{{project.pages[0].image}}")
     div.project_text

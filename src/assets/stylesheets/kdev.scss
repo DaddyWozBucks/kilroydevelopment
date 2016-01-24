@@ -10,7 +10,7 @@
   border-radius: 5px;
   font-family: 'Raleway';
   padding: 1%;
-  margin: 2%;
+  margin: 5%;
 }
 .title{
   font-family: 'Lobster';
@@ -23,7 +23,7 @@
 .project {
   border: 1px solid #2D85F0;
   margin: 1%;
-  padding: 1%;
+  padding: 3%;
   border-radius: 5px;
   background-color: transparentize(#2D85F0, .9);
 }
@@ -40,4 +40,12 @@
 }
 .project_text {
 
+}
+.need_card {
+  margin: 2%;
+  padding: 2%;
+  float: left;
+  border: 2px solid #BF3F85;
+  color: #000;
+  font-family: 'Raleway';
 }

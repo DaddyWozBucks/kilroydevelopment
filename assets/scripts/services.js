@@ -34,6 +34,7 @@ angular.module('kDev.services', [])
       title: "Kilroy Development",
       snippet: "My personal site, upon which you currently surf",
       text: "This is the first incarnation of my personal site (well, at least the first one that I didnt hate after completing, hence the minimalist design.) </br> It was built with AngularJS with LumX providing a wrapper for the Google Material Design Elements. The blog is being implemented using Amazon's DynamoDD cloud based NoSQL service. As time goes by expect changes!",
+      github: "https://github.com/DaddyWozBucks/kilroydevelopment",
       pages: [
         {
           id: 1,
@@ -67,7 +68,8 @@ angular.module('kDev.services', [])
       id: "2",
       title: "DDJbyDesign",
       snippet: "Website of artist, designer, property developer and Welshman - Dafydd Dale-Jones",
-      text: "I met Dafydd while he was setting up a display of his artwork. The goal of this website is to provide a platform to showcase his 'aRt', design projects and provide a point of contact for future business ventures. The site is hosted on Amazon's S3 storage servers and routed through AWS Route 60. The site itself is built with AngularJS with LumX providing a nice mixture of Sass and Google's Material Design Elements",
+      text: "I met Dafydd while he was setting up a display of his artwork. We got to chatting about the need for artists to have an online presence and given he is such a character I offered to build him this site. The goal of this website is to provide a platform to showcase his 'aRt', design projects and provide a point of contact for future business ventures. The site itself is built with entirely with AngularJS, using Bootstrap to keep things mobile friendly. The site itself his hosted on Amazon's S3 storage and routed through AWS Route 53",
+      github: "https://github.com/DaddyWozBucks/ddjbydesign",
       pages: [
         {
           id: 1,
@@ -113,6 +115,25 @@ angular.module('kDev.services', [])
           id: 9,
           title: "Introduction",
           image: "/assets/images/projects/ddj/landing.jpg"
+        },
+        {
+          id: 10,
+          title: "Blog",
+          image: "/assets/images/projects/ddj/blog.jpg"
+        }
+      ]
+    },
+    {
+      id: "3",
+      title: "ArthouseBCN (Working Title)",
+      snippet: "Platform for local artist to sell their wares",
+      text: "I recently moved into a new apartment owned by a local artist. Speaking to him and my other flatmate (also artist) i felt not only could they use a place to esily sell their art but there is potential for so much more. Watch this space!",
+      github: "https://github.com/DaddyWozBucks/arthousebcn",
+      pages: [
+        {
+          id: 1,
+          title: "Landing",
+          image: "/assets/images/projects/arthouse/landing.jpg"
         }
       ]
     }
@@ -144,10 +165,29 @@ angular.module('kDev.services', [])
       value: 70
     }
   ]
+  var needs = [
+    {
+      text: "Personal Website",
+      mailto: "I%20need%20a%20personal%20website!"
+    },
+    {
+      text: "Prototype App",
+      mailto: "I%20need%20a%20prototype%20app!"
+    },
+    {
+      text: "E-Commerce Site",
+      mailto: "Build%20me%20a%20store%20website!"
+    },
+    {
+      text: "Custom Solution",
+      mailto: "Lets%20make%20something%20incredible!"
+    }
+  ]
   return {
     getProjects: projectArray,
     getTechStack: techstackArray,
     getText: text,
+    getNeeds: needs,
     getSkills: skillsArray,
     getProject: function(id){
       for (var i = 0; i < projectArray.length; i++) {
@@ -252,7 +292,7 @@ angular.module('kDev.services', [])
      return BlogRes.query();
     },
     res: function(){
-      return $resource('https://094e263d.ngrok.io/posts/:id', {id: '@id'}, {
+      return $resource('http://CVDB-dev.elasticbeanstalk.com/posts/:id', {id: '@id'}, {
         'get': { method: 'GET', cache: blogCache},
         'query' : {method: 'GET', cache: blogCache, isArray:true }
       })

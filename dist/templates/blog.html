@@ -33,11 +33,11 @@
         <div class="feed_box text-center"><span ng-click="likePost(post.id)" class="glyphicon glyphicon-heart fl"></span>
           <h4 class="fl">Likes: {{post.likes}}</h4>
         </div>
-        <image src="{{post.main_img}}" class="post_img img-responsive"></image><a ng-href="#/app/blog/{{post.id}}">
-          <h1 class="col-xs-12 post_title text-center">{{post.title}}</h1></a>
-        <div class="post_body">
-          <p class="raleway post_quote text-center lead">{{post.quote}}</p>
-        </div>
+      </div>
+      <image src="{{post.main_img}}" class="post_img img-responsive"></image><a ng-href="#/app/blog/{{post.id}}" class="post_title">
+        <h2 class="text-center title">{{post.title}}</h2></a>
+      <div class="post_body">
+        <p class="raleway post_quote text-center lead">{{post.quote}}</p>
       </div>
     </div>
   </div>

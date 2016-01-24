@@ -11,6 +11,10 @@
       <p class="text-center">{{introText.land_2}}</p>
       <p class="text-center">{{introText.land_3}} </p>
     </div>
+    <div id="need">
+      <h4 class="text-left title">I need a...</h4>
+      <div class="container"><a ng-repeat="need in needsArray" ng-href="mailto:kilroydevelopmentbcn@gmail.com?subject={{need.mailto}}" class="need_card">{{need.text}}</a></div>
+    </div>
   </div>
   <div class="col-xs-12 col-sm-4 col-md-offset-1"> 
     <div id="skills">
@@ -24,7 +28,8 @@
     </div>
   </div>
 </div>
-<div id="projects" class="container"><a ng-repeat="project in projectArray" ng-href="#/app/projects/{{project.id}}" class="col-xs-3 project"> 
+<div id="projects" class="container-fluid">
+  <h2 class="title text-center">Projects: Personal & Professional</h2><a ng-repeat="project in projectArray" ng-href="#/app/projects/{{project.id}}" class="col-md-3 col-xs-12 project"> 
     <div>
       <image src="{{project.pages[0].image}}" class="img-responsive"></image>
     </div>

@@ -16,6 +16,7 @@ angular.module('kDev.controllers', ['kDev.services'])
   $scope.showPlaceholder = true;
   $scope.skills = DevInfo.getSkills;
   $scope.introText = DevInfo.getText;
+  $scope.needsArray = DevInfo.getNeeds;
   $scope.emptyArray = function(){
     if ($scope.projectArray.length > 0) {
       $scope.showPlaceholder = false

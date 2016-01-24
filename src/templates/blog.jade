@@ -29,11 +29,11 @@ div.container
           span.glyphicon.glyphicon-heart.fl(ng-click="likePost(post.id)")
           h4.fl Likes: {{post.likes}}
           
-        image.post_img.img-responsive(src="{{post.main_img}}")
-        a(ng-href="#/app/blog/{{post.id}}")
-          h1.col-xs-12.post_title.text-center {{post.title}}
-        div.post_body
-            p.raleway.post_quote.text-center.lead {{post.quote}}
+      image.post_img.img-responsive(src="{{post.main_img}}")
+      a.post_title(ng-href="#/app/blog/{{post.id}}")
+        h2.text-center.title {{post.title}}
+      div.post_body
+        p.raleway.post_quote.text-center.lead {{post.quote}}
         
       
 script. 

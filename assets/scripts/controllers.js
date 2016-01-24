@@ -16,6 +16,7 @@ angular.module('kDev.controllers', ['kDev.services'])
   $scope.showPlaceholder = true;
   $scope.skills = DevInfo.getSkills;
   $scope.introText = DevInfo.getText;
+  $scope.needsArray = DevInfo.getNeeds;
   $scope.emptyArray = function(){
     if ($scope.projectArray.length > 0) {
       $scope.showPlaceholder = false
@@ -28,13 +29,13 @@ angular.module('kDev.controllers', ['kDev.services'])
 }])
 .controller('ProjectDetailCtrl', ['$scope', 'DevInfo','$stateParams', function($scope, DevInfo, $stateParams){
   $scope.project = DevInfo.getProject($stateParams.projectId);
-  $scope.centerVisual = $scope.project.pages[0].image;
-  $scope.changeCV = function(pageId){
+  $scope.projectView = $scope.project.pages[0].image;
+  $scope.changePV = function(pageId){
     var array = $scope.project.pages
     for (var i = 0; i < array.length; i++) {
       if (array[i].id == pageId) {
-        $scope.centerVisual = array[i].image;
-        console.log($scope.centerVisual);
+        $scope.projectView = array[i].image;
+        console.log($scope.projectView);
       }
     }
   }
