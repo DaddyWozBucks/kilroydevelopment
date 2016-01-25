@@ -7,14 +7,17 @@ body { padding-top: 70px; }
   font-family: 'Lobster';
   padding: auto 5%;
 }
+.mainui{
+
+}
 .my_nav{
-  border-bottom: 1px solid black;
-  color: black;
-  background-color: #FFF;
+  border: 10px double #fff;
+  color: #fff;
+  background-color: #2EAD2E;
 }
 .my_nav__item {
   font-family: 'Lobster';
-  color: black;
+  color: #fff;
 }
 .landing_title__subitem {
   margin: 2%;
@@ -25,21 +28,34 @@ body { padding-top: 70px; }
 }
 #title{
   font-size: 8rem;
+
 }
 #k{
   font-family: 'Lobster';
-  font-size: 12rem;
+  font-size:8rem;
   margin: 2rem;
-  text-decoration: underline;
-  text-decoration-style: wavy;
+  padding: 2%;
+
+  // text-decoration: underline;
+  // text-decoration-style: wavy;
+  color: #2EAD2E;
+  border: 10px double #2EAD2E;
+
+  // width: 150px;
+  // height: 200px;
 }
 .title_img{
-  margin: 0 auto;
+  margin: 5% auto;
+  border: 10px double #2EAD2E;
 }
 .icon-bar {
-  border: 1px solid black;
+  border: 1px solid #fff;
 }
 .fl {
   float: left;
   width: 20%;
+}
+#enter {
+  color: #2EAD2E;
+  padding: 2%;
 }

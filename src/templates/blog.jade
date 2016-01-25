@@ -1,6 +1,5 @@
 div.landing_title.container
-  div#k.text-center K
-  image.img-responsive.title_img(src="/assets/images/kilroy.jpg")
+  image.img-responsive.title_img(src="/assets/images/kilroygreen.jpg")
   p.text-center.lead Follow along as I navigate the treacherous waters of freelance coding and being in my twenties in Barcelona.
 div.container
   div.col-xs-12.col-md-4
@@ -27,7 +26,7 @@ div.container
           Posted on {{post.created_at | date}}
         div.feed_box.text-center
           span.glyphicon.glyphicon-heart.fl(ng-click="likePost(post.id)")
-          h4.fl Likes: {{post.likes}}
+          h4.fl {{post.likes}}
           
       image.post_img.img-responsive(src="{{post.main_img}}")
       a.post_title(ng-href="#/app/blog/{{post.id}}")

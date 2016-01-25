@@ -1,7 +1,6 @@
 
 <div class="landing_title container">
-  <div id="k" class="text-center">K</div>
-  <image src="/assets/images/kilroy.jpg" class="img-responsive title_img"></image>
+  <image src="/assets/images/kilroygreen.jpg" class="img-responsive title_img"></image>
   <p class="text-center lead">Follow along as I navigate the treacherous waters of freelance coding and being in my twenties in Barcelona.</p>
 </div>
 <div class="container">
@@ -31,7 +30,7 @@
       <div class="feed">
         <div class="feed_box text-center">Posted on {{post.created_at | date}}</div>
         <div class="feed_box text-center"><span ng-click="likePost(post.id)" class="glyphicon glyphicon-heart fl"></span>
-          <h4 class="fl">Likes: {{post.likes}}</h4>
+          <h4 class="fl">{{post.likes}}</h4>
         </div>
       </div>
       <image src="{{post.main_img}}" class="post_img img-responsive"></image><a ng-href="#/app/blog/{{post.id}}" class="post_title">

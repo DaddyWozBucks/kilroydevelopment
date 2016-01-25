@@ -2,8 +2,8 @@ angular.module('kDev.services', [])
 .factory('DevInfo', function(){
   var text = {
     land_1: "Hello and thanks for checking out my site! My name is Warwick and I am a not-so-newly minted freelance developer.",
-    land_2: "Technology has always been a passion of mine and last year I upped and left and started afresh in Barcelona with some help from my friends over at Ironhack :). At Ironhack I snapped up Ruby (and Rails, of course), JS some other indespensable tools to the modern web developer. SInce the course I have been coding almost exclusively in AngularJS, using it in conjuction with the Ionic Framework to build mobile apps and websites loaded with functionality. Just starting to dip my toe in the Angular 2 pool in anticipation of Ionic 2 :D! ",
-    land_3: "So whether you have the next big idea, your business could use a fresh online presence or you want to see how to make tech actually work for YOU - get in touch! "
+    land_2: "I was born and raised in South Africa before graduating form the University of Virginia (USA) in 2012 and moving to London. I tried a few sales based careers started afresh in Barcelona with some help from my friends over at Ironhack :). At Ironhack I snapped up Ruby (and Rails, of course), JS some other indespensable tools to the modern web developer. Since Ironhack course I have been coding almost exclusively in AngularJS, using it in conjuction with the Ionic Framework and Amazon Web Services to build mobile apps and websites loaded with functionality and ready to scale.",
+    land_3: "So whether you have the next big idea; your business could use a fresh online presence or you want to see how to make tech actually work for YOU - get in touch! "
   }
   var techstackArray = [
     {
@@ -11,7 +11,7 @@ angular.module('kDev.services', [])
       name: "AngularJs",
       web: "www.angularjs.org",
       images: ["http://www.w3schools.com/angular/pic_angular.jpg","http://www.softagon.com.br/wp-content/uploads/2015/02/AngularJS.jpg",],
-      comment: "Angular JS is an extremely awesome language to play around with. With it you can build fast and powerful web apps as well as multiplatform mobile apps using the Ionic Framework."
+      comment: "Angular JS is an awesome language to play around with. With it you can build fast and powerful web apps as well as multiplatform mobile apps using the Ionic Framework."
     },
     {
       id: 1,
@@ -33,7 +33,7 @@ angular.module('kDev.services', [])
       id: "1",
       title: "Kilroy Development",
       snippet: "My personal site, upon which you currently surf",
-      text: "This is the first incarnation of my personal site (well, at least the first one that I didnt hate after completing, hence the minimalist design.) </br> It was built with AngularJS with LumX providing a wrapper for the Google Material Design Elements. The blog is being implemented using Amazon's DynamoDD cloud based NoSQL service. As time goes by expect changes!",
+      text: "Every self-respecting freelancer needs his own site for self-promotion, building a brand and, of course, a place to mess around with weird apps. This is the base upon which i will tinker. Built using AngularJS and a mixture of UI-Bootstrap and regular Bootstrap is responsive and fast. The blog is a Rails API with PostgreSQL hosted on Amazon's Elastic Beanstalk utilising S3 and RDS.",
       github: "https://github.com/DaddyWozBucks/kilroydevelopment",
       pages: [
         {
@@ -68,7 +68,7 @@ angular.module('kDev.services', [])
       id: "2",
       title: "DDJbyDesign",
       snippet: "Website of artist, designer, property developer and Welshman - Dafydd Dale-Jones",
-      text: "I met Dafydd while he was setting up a display of his artwork. We got to chatting about the need for artists to have an online presence and given he is such a character I offered to build him this site. The goal of this website is to provide a platform to showcase his 'aRt', design projects and provide a point of contact for future business ventures. The site itself is built with entirely with AngularJS, using Bootstrap to keep things mobile friendly. The site itself his hosted on Amazon's S3 storage and routed through AWS Route 53",
+      text: "I met Dafydd while he was setting up a display of his artwork. We got to chatting about the need for artists to have an online presence and given he is such a character I offered to build him this site. The goal of this website is to provide a platform to showcase his 'aRt', design projects and a point of contact for potential business ventures. The site itself is built entirely with AngularJS, using Bootstrap to keep things mobile friendly. The site itself his hosted on Amazon's S3 storage and routed through AWS Route 53 without the need for a server.",
       github: "https://github.com/DaddyWozBucks/ddjbydesign",
       pages: [
         {
