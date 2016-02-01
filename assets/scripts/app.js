@@ -6,7 +6,8 @@ angular.module('kDev',
     'ngAnimate',
     'ui.bootstrap',
     'ngResource',
-    'ngFileUpload'
+    'ngFileUpload',
+    'ngSanitize'
   ])
 
   .config(function($stateProvider, $urlRouterProvider) {

@@ -2,8 +2,9 @@ angular.module('kDev.services', [])
 .factory('DevInfo', function(){
   var text = {
     land_1: "Hello and thanks for checking out my site! My name is Warwick and I am a not-so-newly minted freelance developer.",
-    land_2: "I was born and raised in South Africa before graduating form the University of Virginia (USA) in 2012 and moving to London. I tried a few sales based careers started afresh in Barcelona with some help from my friends over at Ironhack :). At Ironhack I snapped up Ruby (and Rails, of course), JS some other indespensable tools to the modern web developer. Since Ironhack course I have been coding almost exclusively in AngularJS, using it in conjuction with the Ionic Framework and Amazon Web Services to build mobile apps and websites loaded with functionality and ready to scale.",
-    land_3: "So whether you have the next big idea; your business could use a fresh online presence or you want to see how to make tech actually work for YOU - get in touch! "
+    land_2: "I was born and raised in South Africa before graduating from the University of Virginia (USA) in 2012 and moving to London. My studies were broad but centered around the theme of how technology has shaped our society.",
+    land_3: "In London I tried my hand at property(Foxtons) and recruitment (Functional Works), but needing a new challenge, a new direction and UV Rays I started afresh in Barcelona with some help from my friends over at Ironhack :). At Ironhack I snapped up Ruby (and Rails, of course), JS and some other indispensable tools to the modern web developer. Since Ironhack course I have been coding almost exclusively in AngularJS, using it in conjuction with the Ionic Framework and Amazon Web Services to build mobile apps and websites loaded with functionality and ready to scale.",
+    land_4: "So whether you have the next big idea; your business could use a fresh online presence or you want to see how to make tech actually work for YOU - get in touch! "
   }
   var techstackArray = [
     {
@@ -39,27 +40,27 @@ angular.module('kDev.services', [])
         {
           id: 1,
           title: "Landing",
-          image: "assets/images/projects/kdev/kilroydev.jpg"
+          image: "assets/images/projects/kdev/klanding.jpg"
         },
         {
           id: 2,
-          title: "About",
-          image: ""
+          title: "Blog",
+          image: "assets/images/projects/kdev/blog.jpg"
         },
         {
           id: 3,
-          title: "Blog",
-          image: ""
+          title: "Projects",
+          image: "assets/images/projects/kdev/projects.jpg"
         },
         {
           id: 4,
-          title: "Projects",
-          image: ""
+          title: "Projects: in Detail",
+          image: "assets/images/projects/kdev/projectdetail.jpg"
         },
         {
           id: 5,
-          title: "Projects: in Detail",
-          image: ""
+          title: "Contact",
+          image: "assets/images/projects/kdev/contact.jpg"
         }
 
       ]
@@ -98,8 +99,8 @@ angular.module('kDev.services', [])
         },
         {
           id: 6,
-          title: "Design: In Detail",
-          image: "/assets/images/projects/ddj/designdetail.jpg"
+          title: "Blog",
+          image: "/assets/images/projects/ddj/blog.jpg"
         },
         {
           id: 7,
@@ -109,17 +110,12 @@ angular.module('kDev.services', [])
         {
           id: 8,
           title: "Contact",
-          image: "/assets/images/projects/ddj/landing.jpg"
+          image: "/assets/images/projects/ddj/contact.jpg"
         },
         {
           id: 9,
           title: "Introduction",
-          image: "/assets/images/projects/ddj/landing.jpg"
-        },
-        {
-          id: 10,
-          title: "Blog",
-          image: "/assets/images/projects/ddj/blog.jpg"
+          image: "/assets/images/projects/ddj/intro.jpg"
         }
       ]
     },
@@ -133,7 +129,7 @@ angular.module('kDev.services', [])
         {
           id: 1,
           title: "Landing",
-          image: "/assets/images/projects/arthouse/landing.jpg"
+          image: "/assets/images/projects/arthousebcn/arthousebcn.jpg"
         }
       ]
     }

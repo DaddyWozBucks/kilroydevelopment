@@ -14,7 +14,7 @@
       <h1 class="title text-center">{{post.title}}</h1>
     </div>
     <div class="post_body">
-      <p class="post_quote">{{post.body}}</p>
+      <p ng-bind-html="post.body" class="post_quote text-center"></p>
     </div>
   </div>
 </div>

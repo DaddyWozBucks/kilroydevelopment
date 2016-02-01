@@ -3,17 +3,21 @@
   <image src="/assets/images/kilroydevgreen.jpg" class="img-responsive title_img"></image>
 </div>
 <div class="container">
-  <div class="col-md-3 col-xs-hidden container">
+  <div class="col-lg-3 col-xs-12 container"> 
     <div ng-repeat="page in project.pages" ng-click="changePV(page.id)" class="page_card title">{{page.title}}</div>
   </div>
-  <div class="col-md-9 col-xs-12 container">
+  <div class="col-lg-9 col-xs-12 container">
     <div class="project_main">
       <div class="image">
-        <image src="{{projectView}}" class="img-responsive"></image>
+        <image src="{{projectView}}" class="project_img img-responsive"></image>
       </div>
       <div class="project_text">
         <h1 class="text-center">{{ project.title }}</h1>
         <p>{{ project.text}}</p>
+      </div>
+      <div class="contact_item">
+        <h3 class="text-center title">GitHub</h3><a ng-href="{{project.github}}">
+          <h5 id="email" class="text-center lead">{{ project.title }} </h5></a>
       </div>
     </div>
   </div>

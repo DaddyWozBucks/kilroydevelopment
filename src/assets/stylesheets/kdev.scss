@@ -1,5 +1,5 @@
 #skills {
-  border: 3px solid #3FBF7F;
+  border: 3px solid #BF3F85;
   border-radius: 5px;
   font-family: 'Raleway';
   padding: 1%;
@@ -9,8 +9,8 @@
   border: 3px solid #BF3F85;
   border-radius: 5px;
   font-family: 'Raleway';
-  padding: 1%;
-  margin: 5%;
+  padding: 2%;
+  margin: 10% 5%;
 }
 .title{
   font-family: 'Lobster';
@@ -21,7 +21,7 @@
   font-size: 1.5rem;
   background-color: #f5f5f5;
   padding: 2%;
-  border: 2px solid #000;
+  border: 2px solid #BF3F85;
   border-radius: 5px;
 }
 .project {
@@ -43,7 +43,10 @@
 
 }
 .project_text {
-
+  margin: 5%;
+  padding: 2%;
+  // border: 2px solid #BF3F85;
+  // border-radius: 5px;
 }
 .need_card {
   margin: 2%;
@@ -52,4 +55,17 @@
   border: 2px solid #BF3F85;
   color: #000;
   font-family: 'Raleway';
+}
+.project_img{
+  max-height: 30rem;
+  margin: 0 auto;
+
+}
+.image {
+  border: 10px double #2EAD2E;
+  padding: 2%;
+  background-color: transparentize(#2EAD2E, .84);
+}
+#pages{
+  margin: 5% 0;
 }

@@ -15,7 +15,6 @@
     </div>
     <div id="twitter" class="hidden-xs hidden-sm">
       <div class="tl"><a href="https://twitter.com/capeverne" data-widget-id="677456432011329536" class="twitter-timeline">Tweets by @capeverne</a></div>
-      <script>{{twitterScript}}</script>
     </div>
     <div id="favourites">
       <h3 class="title text-center">Favourites</h3>
@@ -26,7 +25,7 @@
     </div>
   </div>
   <div class="col-xs-12 col-md-8 container">
-    <div ng-repeat="post in posts" ng-style="{'border': '2px {{post.color}} solid'}" class="post container-fluid">
+    <div ng-repeat="post in posts" class="post container-fluid">
       <div class="feed">
         <div class="feed_box text-center">Posted on {{post.created_at | date}}</div>
         <div class="feed_box text-center"><span ng-click="likePost(post.id)" class="glyphicon glyphicon-heart fl"></span>
@@ -41,4 +40,21 @@
     </div>
   </div>
 </div>
-<script>function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<script>
+  window.twttr = (function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0],
+       t = window.twttr || {};
+     if (d.getElementById(id)) return t;
+     js = d.createElement(s);
+     js.id = id;
+     js.src = "https://platform.twitter.com/widgets.js";
+     fjs.parentNode.insertBefore(js, fjs);
+    
+     t._e = [];
+     t.ready = function(f) {
+       t._e.push(f);
+     };
+    
+     return t;
+   }(document, "script", "twitter-wjs"));
+</script>

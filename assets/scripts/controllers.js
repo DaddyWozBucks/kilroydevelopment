@@ -1,4 +1,4 @@
-angular.module('kDev.controllers', ['kDev.services'])
+angular.module('kDev.controllers', ['kDev.services', 'ngSanitize'])
 
 .controller('AppCtrl', ['$scope', function($scope) {
 
@@ -117,7 +117,7 @@ angular.module('kDev.controllers', ['kDev.services'])
   var Blogp = Blog.getPost;
   Blogp.get({id: $stateParams.postId}, function(data){
     $scope.post = data;
-      console.log(data);
+      console.log(data.body);
   });
   $scope.likePost = function(postId){
     Blogp.get({id: postId}, function(data){
